@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh ' /usr/bin/mvn clean package'
+                sh 'mvn clean package'
                 echo 'build completed'
             }
         }
